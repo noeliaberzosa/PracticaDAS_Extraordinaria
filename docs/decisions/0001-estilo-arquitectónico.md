@@ -1,7 +1,7 @@
 # Estilo arquitectónico
 
 * Status: proposed
-* Date: 2023-10-18
+* Date: 2024-07-02
 
 ## Context and Problem Statement
 

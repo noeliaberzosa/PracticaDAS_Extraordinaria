@@ -16,12 +16,21 @@ Se necesita estructurar la capa lógica de negocios para incorporar los módulos
 ## Considered Options
 
 * 0003-1-Separar los microservicios según los módulos
-* Agrupar los servicios en una única capa
 * 0003-2-Separar los microservicios por dominio
 
 ## Decision Outcome
 
-Chosen option: "Una única capa", because simplifica la estructura manteniendo la calidad del diseño.
+Chosen option: "0003-2-Separar los microservicios por dominio", because simplifica la estructura manteniendo la calidad del diseño.
+
+### Positive Consequences
+
+* Se va a trabajar con una estructura más sólida, duradera y mantenible
+* Disminuye futuros costes de desarrollo
+* Mayor flexibilidad para diseñar internamente la capa
+
+### Negative Consequences
+
+* Se deben dedicar más recursos a corto plazo (en diseño, planificación y desarrollo).
 
 ## Pros and Cons of the Options
 
@@ -31,15 +40,6 @@ Una con los módulos de la lógica de negocio de la empresa y otra que se encarg
 
 * Good, because Hay un intermediario en todas las interacciones
 * Bad, because Es una estructura extra con una función que tal vez se podría realizar sin ella
-
-### Agrupar los servicios en una única capa
-
-Utilizar los módulos proporcionados por la empresa para desarrollar los microservicios.
-
-* Good, because requiere menos planificación.
-* Good, because la estructura original sufrirá menos cambios.
-* Good, because los costes y los plazos de desarrollo se acortan.
-* Bad, because las fronteras trazadas por los módulos pueden no ser adecuadas para el diseño, causando problemas de mantenimiento.
 
 ### 0003-2-Separar los microservicios por dominio
 

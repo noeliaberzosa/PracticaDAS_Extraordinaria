@@ -9,10 +9,8 @@ Necesitamos gestionar el acceso a la base de datos. Tenemos dos bases de datos S
 
 ## Decision Drivers
 
-* Sistema con dos bases de datos
-* BBDD de clientes
-* BBDD de pedidos
-* Necesitamos acceso seguro
+* RF2 Acceso a las bases de datos
+* Mantener la seguridad en el acceso
 
 ## Considered Options
 
@@ -57,8 +55,8 @@ Es un estándar de conectividad de datos que permite a las aplicaciones acceder 
 
 * Good, because es compatible con una amplia gama de sistemas operativos y plataformas, incluyendo Windows,LInux,macOS y otros.
 * Good, because facilita la interoperabilidad entre diferentes sistemas de gestión de bases de datos
-* Good, because configuración de conexión sencilla y en pocos pasos
-* Good, because eficiente en cuanto a rendimiento
+* Good, because la configuración de conexión es sencilla y se puede realizar en pocos pasos
+* Good, because es eficiente en cuanto a rendimiento
 * Bad, because introduce un cierto nivel de overhead(costo adicional o  uso de recursos que no están directamente relacionados con la tarea principal), en términos de rendimiento
 * Bad, because el overhead puede implicar el uso de recursos adicionales como memoria, ancho de banda de red, capacidad de almacenamiento o potencia de procesamiento
 * Bad, because el overhead puede implicar complejidad adicional

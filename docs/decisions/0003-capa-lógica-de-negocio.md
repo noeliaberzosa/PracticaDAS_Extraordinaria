@@ -5,17 +5,19 @@
 
 ## Context and Problem Statement
 
-Se quiere ofrecer una variedad de servicios que abarcan diferentes aspectos de su negocio, desde la gestión de clientes hasta el procesamiento de pagos. Estos servicios serán implementados como módulos independientes para garantizar la modularidad y la reutilización del código.
+Se necesita estructurar la capa lógica de negocios para incorporar los módulos de los servicios provenientes de una arquitectura monolítica. Esta capa necesita seguir una arquitectura basada en microservicios.
 
 ## Decision Drivers
 
-* Respetar la estructura por capas
-* Modularizar
+* RF01: Migración a una arquitectura basada en microservicios
+* RF05 Desacople del módulo reparto y rutas
+* RF08 Relación Incidencias-Repartos
 
 ## Considered Options
 
-* Dividir los servicios en múltiples capas según su funcionalidad
+* 0003-1-Separar los microservicios según los módulos
 * Agrupar los servicios en una única capa
+* 0003-2-Separar los microservicios por dominio
 
 ## Decision Outcome
 
@@ -23,7 +25,7 @@ Chosen option: "Una única capa", because simplifica la estructura manteniendo l
 
 ## Pros and Cons of the Options
 
-### Dividir los servicios en múltiples capas según su funcionalidad
+### 0003-1-Separar los microservicios según los módulos
 
 Una con los módulos de la lógica de negocio de la empresa y otra que se encarga de gestionar las interacciones entre servicios
 
@@ -32,8 +34,17 @@ Una con los módulos de la lógica de negocio de la empresa y otra que se encarg
 
 ### Agrupar los servicios en una única capa
 
-Sería juntar los módulos de la lógica de negocio de la empresa y el gestor de servicios en una misma capa
+Utilizar los módulos proporcionados por la empresa para desarrollar los microservicios.
 
-* Good, because El grado cohesión es muy alto
-* Good, because Es más fácil de desarrollar
-* Bad, because Acopla un poco más los módulos de la empresa
+* Good, because requiere menos planificación.
+* Good, because la estructura original sufrirá menos cambios.
+* Good, because los costes y los plazos de desarrollo se acortan.
+* Bad, because las fronteras trazadas por los módulos pueden no ser adecuadas para el diseño, causando problemas de mantenimiento.
+
+### 0003-2-Separar los microservicios por dominio
+
+Construir los microserviciós acorde al dominio. Juntando o separándo los módulos proporcionados según sea necesario.
+
+* Good, because permite diseñar una estructura nueva adaptada a las necesidades de la arquitectura de microservicios.
+* Good, because el mantenimiento sera menos costoso
+* Bad, because se pueden incrementar los costes de desarrollo más que en la otra opción

@@ -9,17 +9,17 @@ Necesitamos gestionar el acceso a la base de datos. Tenemos dos bases de datos S
 
 ## Decision Drivers
 
-* RF2 Acceso a las bases de datos
+* RF2: Acceso a las bases de datos
 * Mantener la seguridad en el acceso
 
 ## Considered Options
 
-* SQL Server Native Client
-* Open Database Connectivity
+* 0004-1-SQL Server Native Client
+* 0004-2-Open Database Connectivity
 
 ## Decision Outcome
 
-Chosen option: "SQL Server Native Client", because En primer lugar y fundalmente porque al trabajar sobre BBDD SQL neceistamos un gestor de datos SQL.
+Chosen option: "0004-1-SQL Server Native Client", because En primer lugar y fundalmente porque al trabajar sobre BBDD SQL neceistamos un gestor de datos SQL.
 
 ### Positive Consequences
 
@@ -37,7 +37,7 @@ Chosen option: "SQL Server Native Client", because En primer lugar y fundalmente
 
 ## Pros and Cons of the Options
 
-### SQL Server Native Client
+### 0004-1-SQL Server Native Client
 
 Es un controlador de datos desarrollado por Microsoft que permite a las aplicaciones comunicarse con una base de datos SQL Server.Es una opción popular para desarrolladores que trabajan con aplicaciones y sistemas que requieren una conexión directa y eficiente con una base de datos SQL Server.
 
@@ -49,7 +49,7 @@ Es un controlador de datos desarrollado por Microsoft que permite a las aplicaci
 * Bad, because está diseñado para funcionar en sistemas operativos compatibles con Windows, lo que puede ser una limitación si se desea implementar en entornos que utilicen sistemas operativos diferentes.
 * Bad, because aunque en sí mismo puede ser gratuito, SQL Server como producto comercial puede implicar costos de licenciamiento que pueden ser significativos, especialmente en entornos empresariales con grandes volúmenes de datos y usuarios.
 
-### Open Database Connectivity
+### 0004-2-Open Database Connectivity
 
 Es un estándar de conectividad de datos que permite a las aplicaciones acceder y manipular datos en una variedad de bases de datos a través de un único conjunto de interfaces.
 

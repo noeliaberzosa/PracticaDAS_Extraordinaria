@@ -10,8 +10,8 @@ Se necesita estructurar la capa lógica de negocios para incorporar los módulos
 ## Decision Drivers
 
 * RF01: Migración a una arquitectura basada en microservicios
-* RF05 Desacople del módulo reparto y rutas
-* RF08 Relación Incidencias-Repartos
+* RF07: Desacople del módulo reparto y rutas
+* RF010: Relación Incidencias-Repartos
 
 ## Considered Options
 
